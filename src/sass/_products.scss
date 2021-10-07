@@ -112,8 +112,16 @@ textarea {
   text-transform: uppercase;
 
   color: #ffffff;
+}
 
-  margin-bottom: 30px;
+.product-card__title::after {
+  content: '';
+  width: 26px;
+  height: 6px;
+  background: url(../images/products-section/points.svg);
+
+  display: block;
+  margin: 30px auto;
 }
 
 .product-card__description {
