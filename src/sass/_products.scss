@@ -1,7 +1,3 @@
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
 h1,
 h2,
 h3,
@@ -52,4 +48,85 @@ textarea {
     padding-left: 115px;
     padding-right: 115px;
   }
+}
+
+.products-section {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.products-section__label {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffa5ba;
+
+  margin-bottom: 15px;
+}
+
+.products-section__title {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #d41443;
+
+  margin-bottom: 30px;
+}
+
+.cards-drid {
+}
+
+.cards-drid__item {
+}
+
+.cards-drid__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.product-card {
+  background: #ffb8ca;
+  border-radius: 24px;
+
+  padding: 0px 40px 40px 40px;
+}
+
+.product-card__title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  margin-bottom: 30px;
+}
+
+.product-card__description {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(21 / 14);
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+
+  margin-bottom: 30px;
 }
