@@ -140,4 +140,11 @@ textarea {
 }
 
 .product-card__button {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  background: url(../images/products-section/card-btn-icon.svg);
 }
