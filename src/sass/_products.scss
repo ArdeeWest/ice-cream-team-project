@@ -1,61 +1,7 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-textarea {
-  resize: none;
-}
-
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.container {
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-    padding-left: 115px;
-    padding-right: 115px;
-  }
-}
-
-// *****************************************
-
 .products-section {
   padding-top: 120px;
   padding-bottom: 100px;
-  background-color: #e5e5e5;
+  background-color: $main-bg-color;
 }
 
 .products-section__label {
@@ -68,7 +14,7 @@ textarea {
   text-align: center;
   text-transform: uppercase;
 
-  color: #ffa5ba;
+  color: $label-color;
 
   margin-bottom: 15px;
 }
@@ -81,7 +27,7 @@ textarea {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #d41443;
+  color: $title-color;
 
   margin-bottom: 145px;
 }
@@ -125,10 +71,10 @@ textarea {
   transform: translateY(-45%);
 }
 
-.product-card.ice-cream {
+.product-card--ice-cream {
   background: #ffb8ca;
 
-  &.ice-cream::before {
+  &::before {
     background-image: url(../images/products-section/product-1-mobile@1x.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -153,10 +99,10 @@ textarea {
   }
 }
 
-.product-card.ice-coffe {
+.product-card--ice-coffe {
   background: #f0d1a5;
 
-  &.ice-coffe::before {
+  &::before {
     background-image: url(../images/products-section/product-2-mobile@1x.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -181,10 +127,10 @@ textarea {
   }
 }
 
-.product-card.milkshake {
+.product-card--milkshake {
   background: #c2e297;
 
-  &.milkshake::before {
+  &::before {
     background-image: url(../images/products-section/product-3-mobile@1x.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -220,7 +166,7 @@ textarea {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: $subtitle-color;
 }
 
 .product-card__title::after {
@@ -260,10 +206,12 @@ textarea {
   background-size: cover;
   background-color: transparent;
 
+  cursor: pointer;
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product-card__button:focus,
-.product-card__button:hover {
+.product-card__button:focus.ice-cream,
+.product-card__button:hover.ice-cream {
   box-shadow: 0px 0px 3px 2px rgba(212, 20, 67, 0.7);
 }
