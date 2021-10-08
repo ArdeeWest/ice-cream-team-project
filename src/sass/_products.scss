@@ -50,9 +50,12 @@ textarea {
   }
 }
 
+// *****************************************
+
 .products-section {
   padding-top: 120px;
   padding-bottom: 100px;
+  background-color: #e5e5e5;
 }
 
 .products-section__label {
@@ -80,24 +83,130 @@ textarea {
 
   color: #d41443;
 
-  margin-bottom: 30px;
+  margin-bottom: 145px;
 }
 
 .cards-drid {
 }
 
 .cards-drid__item {
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 .cards-drid__item:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 130px;
 }
 
 .product-card {
-  background: #ffb8ca;
   border-radius: 24px;
 
   padding: 0px 40px 40px 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card::before {
+  content: '';
+  width: 249px;
+  height: 252px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  // display: block;
+  margin-bottom: -45%;
+
+  position: relative;
+  z-index: 2;
+  transform: translateY(-45%);
+}
+
+.product-card.ice-cream {
+  background: #ffb8ca;
+
+  &.ice-cream::before {
+    background-image: url(../images/products-section/product-1-mobile@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products-section/product-1-mobile@2x.png);
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/products-section/product-1-tablet@1x.png);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/products-section/product-1-tablet@2x.png);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/products-section/product-1-desktop@1x.png);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/products-section/product-1-desktop@2x.png);
+      }
+    }
+  }
+}
+
+.product-card.ice-coffe {
+  background: #f0d1a5;
+
+  &.ice-coffe::before {
+    background-image: url(../images/products-section/product-2-mobile@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products-section/product-2-mobile@2x.png);
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/products-section/product-2-tablet@1x.png);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/products-section/product-2-tablet@2x.png);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/products-section/product-2-desktop@1x.png);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/products-section/product-2-desktop@2x.png);
+      }
+    }
+  }
+}
+
+.product-card.milkshake {
+  background: #c2e297;
+
+  &.milkshake::before {
+    background-image: url(../images/products-section/product-3-mobile@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products-section/product-3-mobile@2x.png);
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/products-section/product-3-tablet@1x.png);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/products-section/product-3-tablet@2x.png);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/products-section/product-3-desktop@1x.png);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/products-section/product-3-desktop@2x.png);
+      }
+    }
+  }
 }
 
 .product-card__title {
@@ -140,11 +249,21 @@ textarea {
 }
 
 .product-card__button {
-  display: block;
-  margin: 0 auto;
   padding: 0;
   border: 0;
   width: 40px;
   height: 40px;
-  background: url(../images/products-section/card-btn-icon.svg);
+  border-radius: 50%;
+  background-image: url(../images/products-section/card-btn-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-card__button:focus,
+.product-card__button:hover {
+  box-shadow: 0px 0px 3px 2px rgba(212, 20, 67, 0.7);
 }
