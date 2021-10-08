@@ -85,14 +85,14 @@ body {
 
 // COMMON STYLES FOR TITLES
 
-.section__pretext {
+.section__label {
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
   text-transform: uppercase;
-  color: $pretext-color;
+  color: $label-color;
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
@@ -112,7 +112,7 @@ body {
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: $main-title-color;
+  color: $title-color;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
