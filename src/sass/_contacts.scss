@@ -11,19 +11,23 @@
 }
 
 .contacts__container {
-  width: 260px;
   padding-top: 43px;
   padding-bottom: 57px;
-}
-
-.contacts {
+  padding-left: 50px;
+  padding-right: 50px;
   background-image: linear-gradient(
     to bottom,
     $main-bg-color 8%,
     $accent-bg-color 8%,
     $accent-bg-color 100%
   );
+  @media screen and (min-width: 340px) and (max-width: 479px) {
+    width: 340px;
+  }
+}
 
+.contacts {
+  background-color: #e5e5e5;
   &__list {
     font-style: normal;
     margin-bottom: 54px;
@@ -96,10 +100,13 @@
 }
 
 .contacts__locations {
-  width: 190px;
+  padding: 10px 15px;
+  width: 161px;
   margin-bottom: 10px;
 }
 
 .contacts__franchise {
-  width: 190px;
+  display: block;
+  margin: 0 auto;
+  min-width: 161px;
 }
