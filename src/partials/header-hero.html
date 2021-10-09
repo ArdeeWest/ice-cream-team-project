@@ -1,0 +1,50 @@
+<header class="header">
+    <div class="container header__wrapper">
+        <a href="#" class="logo">
+            <picture>
+                <source srcset="images/header/logo.webp 1x, images/header/logo@2x.webp 2x" media="(min-width: 320px)"
+                    type="image/webp">
+                <source srcset="images/header/logo.png 1x, images/header/logo@2x.png 2x" media="(min-width: 320px)">
+                <img class="logo__img" src="images/header/logo.png" alt="Лого" width="199" height="50">
+            </picture>
+        </a>
+        <button class="menu__button menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="menu__burger" width="20" height="12" fill="currentColor">
+                <use href="images/symbol-defs.svg#icon-burger"></use>
+            </svg>
+        </button>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container hero__wrapper">
+        <h1 class="hero__title">ice cream <br> made with
+            <span class="hero__subtitle">passion</span>
+        </h1>
+        <ul class="hero__list">
+
+            <li class="hero__item">
+                <a href="#products" class="hero__link btn--red">Products</a>
+            </li>
+            <li class="hero__item">
+                <a href="#made" class="hero__link btn--white">How it’s made?</a>
+            </li>
+        </ul>
+        <picture>
+            <source srcset="images/hero/mobile/ellipse-mobile.webp 1x, images/hero/mobile/ellipse-mobile@2x.webp 2x"
+                media="(min-width: 320px)" type="image/webp">
+            <source srcset="images/hero/mobile/ellipse-mobile.png 1x, images/hero/mobile/ellipse-mobile@2x.png 2x"
+                media="(min-width: 320px)">
+            <img class="hero__img--ellipse" src="images/hero/mobile/ellipse-mobile.png" alt="Лого" width="324"
+                height="322">
+        </picture>
+        <picture>
+            <source srcset="images/hero/mobile/iceCream-mobile.webp 1x, images/hero/mobile/iceCream-mobile@2x.webp 2x"
+                media="(min-width: 320px)" type="image/webp">
+            <source srcset="images/hero/mobile/iceCream-mobile.png 1x, images/hero/mobile/iceCream-mobile@2x.png 2x"
+                media="(min-width: 320px)">
+            <img class="hero__img--icecream" src="images/hero/mobile/iceCream-mobile.png" alt="Лого" width="171"
+                height="410">
+        </picture>
+    </div>
+</section>
