@@ -1,6 +1,7 @@
 .about-section {
     background: $accent-bg-color;
     padding-top: 125px;
+    padding-bottom: 20px;
     @media screen and (max-width: 767px){
     background-image: url(../images/aboutbg-mob@1x.png);
     background-repeat: no-repeat;
@@ -9,6 +10,10 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/aboutbg-mob@2x.png);
     }
+    }
+    @media screen and (min-width: 768px) {
+        padding-top: 130px;
+        padding-bottom: 33px;
     }
     @media screen and (min-width: 1200px) {
     background-image: url(../images/aboutbg-desk@1x.png);
@@ -28,32 +33,69 @@
 
     &__title {
         text-align: center;
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 40px;
+        padding-right: 40px;
         margin-bottom: 26px;
+        @media screen and (min-width: 768px) {
+            padding: 0;
+            margin-bottom: 50px;
+        }
     }
+}
+
+.about-content {
+    @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+        }
 }
 
 .section-image {
     margin-bottom: 46px;
+    &__picture {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (min-width: 768px) {
+            margin-bottom: 56px;
+            margin-right: 17px;
+            width: 340px;
+        }
 }
 
 .section-content {
-    margin-left: 30px;
-    margin-right: 30px;
+    // margin-left: 30px;
+    // margin-right: 30px;
+    margin: 0 auto;
+    max-width: 220px;
+    @media screen and (min-width: 768px) {
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 50px;
+            max-width: 340px;
+            
+        }
     &__pre-text {
         font-weight: 500;
         font-size: 12px;
         line-height: 1.58;
         color: $secondary-text-color;
-        margin-bottom: 47px;
+        margin-bottom: 30px;
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+            line-height: 1.79;  
+        }
     }
     &__text {
         font-weight: 500;
         font-size: 12px;
         line-height: 1.58;
         color: $main-text-color;
-        margin-bottom: 20px;
+        margin-bottom: 17px;
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+            line-height: 1.79; 
+        }
     }
     &__after-text {
         font-weight: 500;
@@ -61,6 +103,11 @@
         line-height: 1.58;
         color: $main-text-color;
         margin-bottom: 47px;
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+            line-height: 1.79;
+            margin-bottom: 56px;
+        }
     }
     &__button {
         font-size: 14px;
@@ -73,11 +120,11 @@
 }
 
 .arrow-right {
-    border-top: 2px solid $title-color;
-    border-right: 2px solid $title-color;
+    border-top: 3px solid $title-color;
+    border-right: 3px solid $title-color;
     display: inline-block;
     border-radius: 20%;
-    margin-left: 14px;
+    margin-left: 12px;
     padding: 2px;
     align-content: center;
     transform: rotate(45deg);
