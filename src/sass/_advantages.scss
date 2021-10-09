@@ -1,12 +1,15 @@
 .advantages__list{
 margin-top: 39px;
+
 padding-right: 50px;
     // @media screen and (min-width: 768px) {
     //     margin-top: 66px;
+    //     margin-bottom: 140px; 
     //     display: flex;
     //     padding-right: 42px;}
     // @media screen and (min-width: 1280px) {
     //     margin-top: 39px;
+    //     margin-bottom: 123px; 
     //     padding-right: 0;}
 }
  
@@ -51,7 +54,7 @@ color: #D41443;
 .advantages__text{
 font-weight: bold;
 font-size: 12px;
-line-height: 170%;
+line-height: 1.70;
 /* or 20px */
 color: #000000;
     // @media screen and (min-width:768px) {
@@ -61,7 +64,7 @@ color: #000000;
     // @media screen and (min-width:1200px) {
     // font-weight: bold;
     // font-size: 16px;
-    // line-height: 176%;
+    // line-height: 1.76;
     // /* or 28px */
     // letter-spacing: 0.02em;
     // }
