@@ -19,12 +19,10 @@
 .contacts {
   background-image: linear-gradient(
     to bottom,
-    $main-bg-color 15%,
-    $accent-bg-color 15%,
+    $main-bg-color 8%,
+    $accent-bg-color 8%,
     $accent-bg-color 100%
   );
-
-  //   background-image: linear-gradient(to bottom, #e5e5e5 15%, #fff5f6);
 
   &__list {
     font-style: normal;
