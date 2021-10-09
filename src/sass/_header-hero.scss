@@ -1,0 +1,100 @@
+.header {
+    background-color: $hero-bg-color;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 320px;
+        padding-top: 5px;
+    }
+}
+
+.logo__img {
+    max-width: 200px;
+    display: inline-block;
+}
+
+.menu__button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+// HEADER END-----------------------------------------
+.hero {
+    background-color: $hero-bg-color;
+    padding-top: 85px;
+    position: relative;
+    height: 505px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    &__wrapper {
+        max-width: 320px;
+        height: 100%;
+        position: relative;
+    }
+    &__title {
+        position: relative;
+        padding-top: 110px;
+        padding-bottom: 20px;
+        display: block;
+        font-family: Titan One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        z-index: 10;
+    }
+    &__subtitle {
+        display: block;
+        font-family: Titan One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 96.5%;
+        text-transform: uppercase;
+        color: #D41443;
+    }
+    &__list {
+        display: flex;
+        position: absolute;
+        z-index: 3;
+    }
+    &__item {
+        
+        &:first-child {
+            margin-right: 8px;
+        }
+    }
+    &__link {
+        padding: 6px 12px;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 1.25;
+    }
+    &__img {
+        &--ellipse {
+            position: absolute;
+            width: 346px;
+            height: 344px;
+            top: 0;
+            left: 36px;
+            z-index: 1;
+        }
+        &--icecream {
+            position: absolute;
+            width: 171px;
+            height: 410px;
+            top: 10px;
+            left: 117px;
+            z-index: 2;
+        }
+    }
+}
