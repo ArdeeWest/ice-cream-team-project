@@ -1,0 +1,84 @@
+.about-section {
+    background: $accent-bg-color;
+    padding-top: 125px;
+    @media screen and (max-width: 767px){
+    background-image: url(../images/aboutbg-mob@1x.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size:contain;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/aboutbg-mob@2x.png);
+    }
+    }
+    @media screen and (min-width: 1200px) {
+    background-image: url(../images/aboutbg-desk@1x.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size:contain;
+    @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/aboutbg-desk@2x.png);
+    }
+    }
+    &__label {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        text-align: center;
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-bottom: 26px;
+    }
+}
+
+.section-image {
+    margin-bottom: 46px;
+}
+
+.section-content {
+    margin-left: 30px;
+    margin-right: 30px;
+    &__pre-text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.58;
+        color: $secondary-text-color;
+        margin-bottom: 47px;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.58;
+        color: $main-text-color;
+        margin-bottom: 20px;
+    }
+    &__after-text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.58;
+        color: $main-text-color;
+        margin-bottom: 47px;
+    }
+    &__button {
+        font-size: 14px;
+        line-height: 1.29;
+        text-align: center;
+        height: 44px;
+        padding-left: 37px;
+        padding-right: 37px;
+    }
+}
+
+.arrow-right {
+    border-top: 2px solid $title-color;
+    border-right: 2px solid $title-color;
+    display: inline-block;
+    border-radius: 20%;
+    margin-left: 14px;
+    padding: 2px;
+    align-content: center;
+    transform: rotate(45deg);
+}
