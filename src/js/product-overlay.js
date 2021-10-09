@@ -1,4 +1,5 @@
 (() => {
+  {
   const refs = {
     IceCreamBtn: document.querySelector('[overlay-ice-cream-btn]'),
     IceCream: document.querySelector('[ice-cream]'),
@@ -7,7 +8,8 @@
   refs.IceCreamBtn.addEventListener('click', toggleMenu);
 
   function toggleMenu() {
-    refs.IceCream.classList.toggle('overlay-shown',);
+    refs.IceCream.classList.toggle('overlay-shown');
+    }
   }
 
   {
