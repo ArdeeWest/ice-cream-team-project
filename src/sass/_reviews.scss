@@ -1,5 +1,4 @@
 .riviews {
-  // border: 3px solid rgb(15, 2, 13);
   padding-top: 40px;
   padding-bottom: 43px;
   background-color: #ffffff;
@@ -8,7 +7,6 @@
   min-width: 320px;
 }
 .riviews__article {
-  // border: 3px solid rgb(214, 126, 199);
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -25,9 +23,6 @@
   padding: 43px 50px 20px 50px;
   background: #fafafa;
   margin-bottom: 29px;
-  // border: 3px solid rgb(238, 224, 25);
-  @media screen and (min-width: 480px) {
-  }
   @media screen and (min-width: 768px) {
     width: 620px;
     height: 165px;
@@ -42,25 +37,22 @@
   }
 }
 .riviews__h3 {
-  // border: 3px solid rgb(52, 211, 105);
+  position: relative;
+  z-index: 4;
   margin-left: auto;
   margin-right: auto;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 255%;
-  /* or 31px */
+  line-height: 2.58;
   text-align: center;
   color: #000000;
   width: 100%;
   width: 157px;
-  @media screen and (min-width: 480px) {
-  }
   @media screen and (min-width: 768px) {
     font-size: 14px;
-    line-height: 216%;
-    /* or 30px */
+    line-height: 2.14;
     letter-spacing: 0.04em;
     margin-left: auto;
     margin-right: auto;
@@ -68,21 +60,17 @@
   }
   @media screen and (min-width: 1200px) {
     font-size: 16px;
-    line-height: 186%;
-    /* or 30px */
+    line-height: 1.87;
     margin-left: auto;
     margin-right: auto;
     width: 770px;
   }
 }
 .riviews__relative {
-  // border: 3px solid rgb(52, 211, 105);
   width: auto;
   position: relative;
   background-image: linear-gradient(0deg, #e1e1e1, #e1e1e1 1px, transparent 1px, transparent 100%);
   background-size: 1px 30px;
-  @media screen and (min-width: 480px) {
-  }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
       0deg,
@@ -105,13 +93,11 @@
   }
 }
 .riviews__quotes {
+  z-index: 0;
   position: absolute;
   top: 0;
   left: 0;
   transform: translate(16px, -22px);
-  @media screen and (min-width: 480px) {
-    transform: translate(16px, -22px);
-  }
   @media screen and (min-width: 768px) {
     transform: translate(-14px, -18px);
   }
@@ -119,27 +105,15 @@
     transform: translate(-7px, -18px);
   }
 }
-.riviews__lain {
-  width: 170px;
-  height: 30px;
-  border-bottom: 1px solid #e1e1e1;
-  @media screen and (min-width: 480px) {
-    width: 170px;
-    height: 30px;
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
-}
-
 .riviews__list {
   display: flex;
   margin-bottom: 18px;
   align-items: center;
 }
 .riviews__li {
-  margin-left: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
   background: #c7133e;
   width: 4px;
   height: 4px;
@@ -148,20 +122,15 @@
 .riviews__p {
   margin-bottom: 30px;
   font-size: 14px;
-  line-height: 186%;
-  /* or 26px */
+  line-height: 1.85;
   color: #000000;
-  @media screen and (min-width: 480px) {
-  }
   @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: 186%;
-    /* or 30px */
   }
   @media screen and (min-width: 1200px) {
     font-size: 20px;
     line-height: 186%;
-    /* or 37px */
   }
 }
 .riviews__item {
