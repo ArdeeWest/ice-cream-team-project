@@ -7,8 +7,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        min-width: 320px;
-        max-width: 480px;
         padding-top: 5px;
     }
     &__menu-button {
@@ -21,14 +19,15 @@
     max-width: 200px;
     display: inline-block;
 }
+.header__modal-button {
+    display: none;
+}
 // HEADER END-----------------------------------------
 .hero {
     background-color: $hero-bg-color;
     width: 100%;
     overflow: hidden;
     &__wrapper {
-        min-width: 320px;
-        max-width: 480px;
         height: 502px;
         position: relative;
     }
@@ -42,7 +41,7 @@
         margin-bottom: 19px;
         font-weight: normal;
         font-size: 26px;
-        line-height: 30px;
+        line-height: 1.15;
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: #FFFFFF;
@@ -51,7 +50,7 @@
         display: block;
         font-weight: normal;
         font-size: 48px;
-        line-height: 96.5%;
+        line-height: 0.965;
         text-transform: uppercase;
         color: #D41443;
     }
@@ -67,17 +66,22 @@
             margin-right: 8px;
         }
     }
+    &__count-list {
+        display: none;
+    }
     &__img {
         &--icecream {
             position: absolute;
-            width: 171px;
-            height: 410px;
-            top: 92px;
+            bottom: 0;
             right: 32px;
             z-index: 2;
         }
+        &--jug,
+        &--girl {
+            display: none;
+        }
     }
-    .hero__box-circle {
+    &__box-circle {
         position: absolute;
         top: 83px;
         right: -62px;
@@ -85,5 +89,108 @@
         border-radius: 50%;
         width: 346px;
         height: 344px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .logo {
+        margin-right: auto;
+    }
+    .header {
+        position: absolute;
+        background-color: transparent;
+        &__wrapper {
+          padding-top: 37px;
+        }
+        &__menu-button {
+          margin-right: 30px;
+        }
+        &__modal-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 44px;
+          width: 160px;
+        }
+    }
+    .hero {
+        &__wrapper {
+          height: 399px;
+        }
+        &__box {
+            top: 102px;
+        }
+        &__title {
+          font-size: 22px;
+          line-height: 1.14;
+        }
+        &__subtitle {
+          font-size: 34px;
+          line-height: 0.905;
+          letter-spacing: 0.04em;
+        }
+        &__count-list {
+          display: block;
+          position: absolute;
+          right: 34px;
+          top: 94px;
+          text-align: right;
+        }
+        &__count-item {
+            position: relative;
+            padding-top: 2px;
+            padding-right: 10px;
+            font-family: Titan One;
+            font-size: 28px;
+            line-height: 1.14;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #D41443;
+            z-index: 1;
+            &:first-child {
+                margin-bottom: 13px;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                z-index: -1;
+                // left: 734px;
+                // top: 94px;
+                background: #FFFFFF;
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+            }
+        }
+        &__count-text {
+            font-family: DM Sans;
+            font-size: 8px;
+            line-height: 1.25;
+            text-transform: none;
+            letter-spacing: normal;
+            color: #FFFFFF;
+        }
+        &__box-circle {
+            top: 31px;
+            right: 137px;
+            width: 324px;
+            height: 322px;
+        }
+        &__img--icecream {         
+          right: 247px;
+        }
+        &__img--jug {
+          display: block;
+          position: absolute;
+          bottom: 28px;
+        }
+        &__img--girl {
+          display: block;
+          position: absolute;
+          bottom: 0;
+          right: 34px;
+        }
     }
 }
