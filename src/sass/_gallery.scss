@@ -9,18 +9,16 @@
     padding-top: 70px;
     padding-bottom: 60px;
   }
-  &-img {
-    background-image: linear-gradient(
-      $accent-bg-color 60%,
-      $main-bg-color 40%,
-      // getColor('$hero-bg-color') 40%,
-      // getColor('$accent-bg-color') 60%
-    );
-  }
+  background-image: linear-gradient(
+    $accent-bg-color 60%,
+    $main-bg-color 40%,
+    // getColor('$hero-bg-color') 40%,
+    // getColor('$accent-bg-color') 60%
+  );
 }
 .gallery__list {
   &::before {
-    content: 'scale(1.25)';
+    content: scale(1.25);
   }
 
   animation: animate125 3000ms infinite 1000ms;
