@@ -16,20 +16,20 @@
     $main-bg-color 100%
   );
 }
-.gallery__list {
+.gallery__item picture {
   &::before {
     content: '';
   }
 
   //animation: animate125 3000ms infinite 1000ms;
 
-  // &:hover,
-  // &:focus {
-  //   cursor: pointer;
-  // animation: flip;
-  //animation-duration: 1000ms;
-  // animation: animate125 3000ms infinite 1000ms;
-  // }
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    animation: flip;
+    animation-duration: 1000ms;
+    animation: animate125 3000ms infinite 1000ms;
+  }
 }
 @keyframes animate125 {
   0% {
