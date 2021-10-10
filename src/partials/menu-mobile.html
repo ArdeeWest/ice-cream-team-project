@@ -1,11 +1,12 @@
-<button type="button" class="menu-button is-open" data-menu-button aria-expanded="false" aria-controls="menu-container">
-    <svg width="20" height="12" aria-label="Переключатель мобильного меню">
-        <use class="icon-menu" href="./images/symbol-defs.svg#icon-close"></use>
-        <use class="icon-close" href="./images/symbol-defs.svg#icon-burger"></use>
-    </svg>
-</button>
 
-<div class="menu-container" id="menu-container" data-menu>
+
+<div class="menu-container js-menu-container" id="menu-container" data-menu>
+    <button type="button" class="close-button js-close-menu" data-menu-button aria-expanded="false"
+        aria-controls="menu-container">
+        <svg width="14" height="14" aria-label="Переключатель мобильного меню">
+            <use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+    </button>
     <div class="menu-button--flex">
     <button type="button" class="btn--white btn--white--mobile" data-modal-open>Buy now
         <svg class="btn__arrow-red" width="10" height="10">
