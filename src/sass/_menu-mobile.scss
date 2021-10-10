@@ -97,22 +97,22 @@
   align-items: center;
   justify-content: center;
 }
-.menu-button .menu__burger {
+.menu__button .menu__burger {
   display: block;
 }
 
-.menu-button.is-open .icon-close {
+.menu__button.is-open .icon-close {
   display: block;
 }
-.menu-button.is-open .menu__burger {
+.menu__button.is-open .menu__burger {
   display: none;
 }
-.menu-button:hover .icon-close,
-.menu-button:focus .icon-close {
+.menu__button:hover .icon-close,
+.menu__button:focus .icon-close {
   fill: $title-color;
 }
-.menu-button:hover .menu__burger,
-.menu-button:focus .menu__burger {
+.menu__button:hover .menu__burger,
+.menu__button:focus .menu__burger {
   fill: $main-bg-color;
 }
 .menu__burger {
