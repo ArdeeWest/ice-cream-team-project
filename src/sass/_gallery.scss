@@ -10,26 +10,26 @@
     padding-bottom: 60px;
   }
   background-image: linear-gradient(
-    $accent-bg-color 60%,
-    $main-bg-color 40%,
-    // getColor('$hero-bg-color') 40%,
-    // getColor('$accent-bg-color') 60%
+    to bottom,
+    $accent-bg-color 45%,
+    $main-bg-color 45%,
+    $main-bg-color 100%
   );
 }
 .gallery__list {
   &::before {
-    content: scale(1.25);
+    content: '';
   }
 
-  animation: animate125 3000ms infinite 1000ms;
+  //animation: animate125 3000ms infinite 1000ms;
 
-  &:hover,
-  &:focus {
-    cursor: pointer;
-    animation: flip;
-    animation-duration: 1s;
-    animation: animate125 3000ms infinite 1000ms;
-  }
+  // &:hover,
+  // &:focus {
+  //   cursor: pointer;
+  // animation: flip;
+  //animation-duration: 1000ms;
+  // animation: animate125 3000ms infinite 1000ms;
+  // }
 }
 @keyframes animate125 {
   0% {
