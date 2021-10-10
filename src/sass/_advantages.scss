@@ -1,8 +1,6 @@
-.advantages__list {
+.advantages {
   padding-top: 20px;
   padding-bottom: 50px;
-<<<<<<< Updated upstream
-=======
   background-color: $accent-bg-color;
   @media screen and(min-width:768px) {
     padding-top: 33px;
@@ -15,12 +13,14 @@
 }
 
 .advantages__list {
->>>>>>> Stashed changes
   padding-right: 50px;
   @media screen and (min-width: 768px) {
     display: flex;
-    padding-right: 56px;}
-  // @media screen and (min-width: 1280px) {
+    padding-right: 56px;
+  }
+  // @media screen and (min-width: 1200px) {
+  //     margin-top: 20px;
+  //     margin-bottom: px;
   //     padding-right: 0;}
 }
 
@@ -30,11 +30,12 @@
     margin-bottom: 0;
   }
   @media screen and (min-width: 768px) {
-    width: calc((100% - 2 * 60px) / 3);
     margin-bottom: 0px;
+    width: calc((100% - 2 * 60px) / 3);
     margin-right: 60px;
     &:last-child {
-      margin-right: 0px;}
+      margin-right: 0px;
+    }
   }
   //   @media screen and (min-width: 1200px) {
   //     width: calc((100% - 2 * 30px) / 3);
@@ -42,6 +43,15 @@
   //     &:last-child {
   //       margin-right: 0px;}
   //   }
+}
+.advanteges__icon {
+  margin-bottom: 16px;
+  @media screen and(min-width:768px) {
+    padding-bottom: 36px;
+  }
+  // @media screen and(min-width:1200) {
+  //   padding-bottom: 40px;
+  // }
 }
 
 .advantages__title {
@@ -53,10 +63,14 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $title-color;
+  margin-bottom: 20px;
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 1.46;
-    margin-bottom: 13px;}
+    margin-bottom: 13px;
+    text-transform: unset;
+  }
+
   //   @media screen and (min-width: 1200px) {
   //     font-size: 58px;
   //     line-height: 1.14;
@@ -65,15 +79,19 @@
 }
 
 .advantages__text {
+  font-family: DM Sans;
+  font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 1.7;
   /* or 20px */
   color: $secondary-text-color;
-  // @media screen and (min-width:768px) {
-  // font-size: 14px;
-  // line-height: 1.74;
-  // /* or 24px */}
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.74;
+    /* or 24px */
+  }
+
   // @media screen and (min-width:1200px) {
   // font-weight: bold;
   // font-size: 16px;
