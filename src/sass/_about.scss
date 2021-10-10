@@ -69,8 +69,8 @@
         }
     @media screen and (min-width: 1200px) {
         margin-right: 74px;
-        width: 100%;
-    }
+        width: 516px;
+        }
 }
 
 .section-content {
@@ -80,13 +80,13 @@
             margin-left: 0;
             margin-right: 0;
             margin-top: 50px;
-            max-width: 340px;    
+            width: 340px;  
         }
     @media screen and (min-width: 1200px) {
             margin-left: 0;
             margin-right: 0;
             margin-top: 50px;
-            max-width: 463px;    
+            width: 463px;  
         }
     &__pre-text {
         font-weight: 500;
