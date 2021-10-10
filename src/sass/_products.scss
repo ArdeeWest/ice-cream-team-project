@@ -72,10 +72,8 @@
   }
 
   &__item {
-    @media screen and(max-width: 767px) {
-      max-width: 280px;
-      margin: 0 auto;
-    }
+    width: 100%;
+    margin: 0 auto;
 
     @media screen and(min-width: 768px) {
       flex-basis: calc(100% / 3 - 20px);
@@ -369,14 +367,14 @@
   color: #ffffff;
 
   padding: 10px;
-  border-radius: 7px;
+  border-radius: 24px;
 
-  // overflow: auto;
+  overflow: auto;
 
   position: absolute;
   left: 0;
   top: 194px;
-  height: 200px;
+  height: 37%;
 
   opacity: 0;
   transform: scale(0.3);
@@ -389,26 +387,26 @@
     overflow: auto;
 
     top: 183px;
-    height: 210px;
   }
 
   @media screen and(min-width: 1200px) {
     font-size: 16px;
 
     top: 207px;
-    top: 215px;
   }
 
   &--ice-cream {
-    background-color: #f88ca5;
+    background-image: linear-gradient(to top, #ffb8ca, #f88ca5);
   }
 
   &--ice-coffe {
-    background-color: #e8c086;
+    // background-color: #e8c086;
+    background-image: linear-gradient(to top, #f0d1a5, #e8c086);
   }
 
   &--milkshake {
-    background-color: #acd17b;
+    // background-color: #acd17b;
+    background-image: linear-gradient(to top, #c2e297, #acd17b);
   }
 }
 
