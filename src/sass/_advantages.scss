@@ -1,15 +1,26 @@
 .advantages__list {
   padding-top: 20px;
   padding-bottom: 50px;
+<<<<<<< Updated upstream
+=======
+  background-color: $accent-bg-color;
+  @media screen and(min-width:768px) {
+    padding-top: 33px;
+    padding-bottom: 70px;
+  }
+  // @media screen and(min-width:1200px) {
+  //   padding-top: 20px;
+  //   padding-bottom: 70px;
+  // }
+}
+
+.advantages__list {
+>>>>>>> Stashed changes
   padding-right: 50px;
-  // @media screen and (min-width: 768px) {
-  //     margin-top: 33px;
-  //     margin-bottom: 70px;
-  //     display: flex;
-  //     padding-right: 42px;}
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-right: 56px;}
   // @media screen and (min-width: 1280px) {
-  //     margin-top: 20px;
-  //     margin-bottom: px;
   //     padding-right: 0;}
 }
 
@@ -18,14 +29,14 @@
   &:last-child {
     margin-bottom: 0;
   }
-  //   @media screen and (min-width: 768px) {
-  //     width: calc((100% - 2 * 60px) / 3);
-  //     margin-bottom: 0px;
-  //     margin-right: 60px;
-  //     &:last-child {
-  //       margin-right: 0px;}
-  //   }
-  //   @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 60px) / 3);
+    margin-bottom: 0px;
+    margin-right: 60px;
+    &:last-child {
+      margin-right: 0px;}
+  }
+  //   @media screen and (min-width: 1200px) {
   //     width: calc((100% - 2 * 30px) / 3);
   //     margin-right: 30px;
   //     &:last-child {
@@ -34,18 +45,19 @@
 }
 
 .advantages__title {
+  font-family: Titan One;
+  font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $title-color;
-  //   @media screen and (min-width: 768px) {
-  //     font-size: 48px;
-  //     line-height: 1.46;
-  //     margin-top: 36px;
-  //     margin-bottom: 13px;}
-  //   @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.46;
+    margin-bottom: 13px;}
+  //   @media screen and (min-width: 1200px) {
   //     font-size: 58px;
   //     line-height: 1.14;
   //     margin-top: 40px;
