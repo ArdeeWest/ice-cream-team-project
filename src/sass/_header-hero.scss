@@ -1,0 +1,89 @@
+.header {
+    background-color: $hero-bg-color;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 320px;
+        max-width: 480px;
+        padding-top: 5px;
+    }
+    &__menu-button {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+    }
+}
+.logo__img {
+    max-width: 200px;
+    display: inline-block;
+}
+// HEADER END-----------------------------------------
+.hero {
+    background-color: $hero-bg-color;
+    width: 100%;
+    overflow: hidden;
+    &__wrapper {
+        min-width: 320px;
+        max-width: 480px;
+        height: 502px;
+        position: relative;
+    }
+    &__box {
+        position: absolute;
+        z-index: 10;
+        top: 193px;
+        font-family: Titan One;
+    }
+    &__title {
+        margin-bottom: 19px;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__subtitle {
+        display: block;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 96.5%;
+        text-transform: uppercase;
+        color: #D41443;
+    }
+    &__list {
+        display: flex;
+    }
+    &__item {
+        font-family: DM Sans;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 1.25;
+        &:first-child {
+            margin-right: 8px;
+        }
+    }
+    &__img {
+        &--icecream {
+            position: absolute;
+            width: 171px;
+            height: 410px;
+            top: 92px;
+            right: 32px;
+            z-index: 2;
+        }
+    }
+    .hero__box-circle {
+        position: absolute;
+        top: 83px;
+        right: -62px;
+        background-color: #FFA5BA;
+        border-radius: 50%;
+        width: 346px;
+        height: 344px;
+    }
+}

@@ -1,5 +1,3 @@
-// тут будут основные стили - шрифт, цвета, лайн-хейты и тд.
-
 // R E S E T  S T Y L E S
 ul {
   list-style: none;
@@ -28,7 +26,7 @@ a {
 }
 
 // C O L O R S
-$main-bg-color: #e5e5e5;
+$main-bg-color: #ffffff;
 $accent-bg-color: #fff5f6;
 $hero-bg-color: #ffb8ca;
 $mob-menu-bg-color: #e17992;
@@ -48,6 +46,7 @@ body {
   background: $main-bg-color;
   color: $main-text-color;
   font-family: 'DM Sans', sans-serif;
+  font-style: normal;
   letter-spacing: 0.04em;
 }
 
@@ -73,13 +72,13 @@ body {
   }
   @media screen and (min-width: 768px) {
     width: 768px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
-    padding-left: 115px;
-    padding-right: 115px;
+    padding-left: 73px;
+    padding-right: 73px;
   }
 }
 
@@ -141,14 +140,17 @@ body {
 }
 
 .btn--white {
+  display: inline-block;
+  padding: 10px 20px;
   color: $title-color;
   background-color: #ffffff;
+  stroke: #d41342;
   font-weight: 700;
   letter-spacing: 0.04em;
   border: 0 solid transparent;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 22px;
   cursor: pointer;
+  vertical-align: middle;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
@@ -157,17 +159,35 @@ body {
 }
 
 .btn--red {
+  display: inline-block;
+  padding: 10px 20px;
   color: #ffffff;
   background-color: #d41342;
+  stroke: #fff;
   font-weight: 700;
   letter-spacing: 0.04em;
   border: 0 solid transparent;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 22px;
   cursor: pointer;
+  vertical-align: middle;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background-color: #c7133e;
   }
+}
+
+// Класс svg-стрелочек для ховера
+// Пример
+// <a href="" target="blank" class="btn--red"
+//         >Our Locations
+//         <svg class="btn__arrow-red" width="10" height="10">
+//           <use href="./images/symbol-defs.svg#icon-arrow-white"></use>
+//         </svg>
+
+.btn__arrow-red,
+.btn__arrow-white {
+  margin-left: 5px;
 }

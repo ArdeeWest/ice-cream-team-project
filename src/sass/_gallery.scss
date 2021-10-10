@@ -1,0 +1,126 @@
+.gallery {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  @media screen and (min-width: 767px) {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+  background-image: linear-gradient(
+    to bottom,
+    $accent-bg-color 45%,
+    $main-bg-color 45%,
+    $main-bg-color 100%
+  );
+}
+.gallery__list {
+  &::before {
+    content: '';
+  }
+
+  //animation: animate125 3000ms infinite 1000ms;
+
+  // &:hover,
+  // &:focus {
+  //   cursor: pointer;
+  // animation: flip;
+  //animation-duration: 1000ms;
+  // animation: animate125 3000ms infinite 1000ms;
+  // }
+}
+@keyframes animate125 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.gallery {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item:not(:first-child) {
+    margin-right: 1px;
+    @media screen and (min-width: 767px) {
+      margin-right: 2px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 4px;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-left: 1px;
+    @media screen and (min-width: 767px) {
+      margin-left: 2px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 4px;
+    }
+  }
+  &__item--first {
+    justify-content: center;
+  }
+  &__item--second {
+    justify-content: flex-start;
+    padding-top: 25px;
+    @media screen and (min-width: 767px) {
+      padding-top: 54px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 87px;
+    }
+  }
+  &__item--third {
+    justify-content: flex-start;
+  }
+  &__item--third:last-child {
+    margin-bottom: 0;
+  }
+  &__item--fourth {
+    justify-content: flex-start;
+    padding-top: 29px;
+    @media screen and (min-width: 767px) {
+      padding-top: 61px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 100px;
+    }
+  }
+  &__item--fifth {
+    justify-content: flex-start;
+    padding-top: 15px;
+    @media screen and (min-width: 767px) {
+      padding-top: 33px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 52px;
+    }
+  }
+  &__img {
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 1px;
+    @media screen and (min-width: 767px) {
+      margin-bottom: 2px;
+      border-radius: 12px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 4px;
+      border-radius: 20px;
+    }
+  }
+}

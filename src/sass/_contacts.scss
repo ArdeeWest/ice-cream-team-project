@@ -1,0 +1,112 @@
+@mixin text($fw: 500, $fs: 12px, $lh: 1.86, $color: $main-text-color) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  color: $color;
+}
+@mixin trans($properties...) {
+  transition-property: $properties;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__container {
+  padding-top: 43px;
+  padding-bottom: 57px;
+  padding-left: 50px;
+  padding-right: 50px;
+  //   @media screen and (min-width: 340px) and (min-width: 480px) {
+  //     width: 340px;
+  //   }
+}
+
+.contacts {
+  background-image: linear-gradient(
+    to bottom,
+    $main-bg-color 8%,
+    $accent-bg-color 8%,
+    $accent-bg-color 100%
+  );
+
+  &__list {
+    font-style: normal;
+    margin-bottom: 54px;
+  }
+
+  &__item {
+    padding: 43px 20px;
+    background: #ffffff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    @include text(500, 12px, 1.86, $subtitle-color);
+    margin-bottom: 25px;
+    padding: 3px 25px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #f0d1a5;
+  }
+
+  &__title--green {
+    background-color: #c2e297;
+  }
+
+  &__subtitle {
+    @include text(500, 12px, 1.86, $secondary-text-color);
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    @include text(500, 12px, 1.5, $main-text-color);
+    margin-bottom: 25px;
+    letter-spacing: 0.03em;
+  }
+
+  &__thumb {
+    padding: 25px 0;
+    margin-bottom: 25px;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+  }
+
+  &__days {
+    @include text(500, 12px, 1.86, $secondary-text-color);
+  }
+
+  &__time {
+    @include text(500, 12px, 1.86, $accent-text-color-second);
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__link {
+    @include text(500, 12px, 1.5, $main-text-color);
+    display: block;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.contacts__wrapper {
+  text-align: center;
+}
+
+.contacts__locations {
+  padding: 10px 17px;
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+}
+
+.contacts__franchise {
+  display: block;
+  margin: 0 auto;
+  min-width: 161px;
+}
