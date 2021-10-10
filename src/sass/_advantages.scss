@@ -6,10 +6,10 @@
     padding-top: 33px;
     padding-bottom: 70px;
   }
-  // @media screen and(min-width:1200px) {
-  //   padding-top: 20px;
-  //   padding-bottom: 70px;
-  // }
+  @media screen and(min-width:1200px) {
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
 }
 
 .advantages__list {
@@ -18,10 +18,8 @@
     display: flex;
     padding-right: 56px;
   }
-  // @media screen and (min-width: 1200px) {
-  //     margin-top: 20px;
-  //     margin-bottom: px;
-  //     padding-right: 0;}
+  @media screen and (min-width: 1200px) {
+      padding-right: 0;}
 }
 
 .advantages__item {
@@ -37,21 +35,21 @@
       margin-right: 0px;
     }
   }
-  //   @media screen and (min-width: 1200px) {
-  //     width: calc((100% - 2 * 30px) / 3);
-  //     margin-right: 30px;
-  //     &:last-child {
-  //       margin-right: 0px;}
-  //   }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 2 * 30px) / 3);
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0px;}
+  }
 }
 .advanteges__icon {
   margin-bottom: 16px;
   @media screen and(min-width:768px) {
     margin-bottom: 36px;
   }
-  // @media screen and(min-width:1200) {
-  //   padding-bottom: 40px;
-  // }
+  @media screen and(min-width:1200) {
+    margin-bottom: 40px;
+  }
 }
 
 .advantages__title {
@@ -71,11 +69,12 @@
     text-transform: unset;
   }
 
-  //   @media screen and (min-width: 1200px) {
-  //     font-size: 58px;
-  //     line-height: 1.14;
-  //     margin-top: 40px;
-  //     margin-bottom: 15px;}
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
+    margin-top: 40px;
+    margin-bottom: 15px;}
+    
 }
 
 .advantages__text {
@@ -89,14 +88,11 @@
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.74;
-    /* or 24px */
-  }
+    /* or 24px */}
 
-  // @media screen and (min-width:1200px) {
-  // font-weight: bold;
-  // font-size: 16px;
-  // line-height: 1.76;
-  // /* or 28px */
-  // letter-spacing: 0.02em;
-  // }
+  @media screen and (min-width:1200px) {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+    /* or 28px */}
 }
