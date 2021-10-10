@@ -15,19 +15,19 @@
   padding-bottom: 57px;
   padding-left: 50px;
   padding-right: 50px;
+  //   @media screen and (min-width: 340px) and (min-width: 480px) {
+  //     width: 340px;
+  //   }
+}
+
+.contacts {
   background-image: linear-gradient(
     to bottom,
     $main-bg-color 8%,
     $accent-bg-color 8%,
     $accent-bg-color 100%
   );
-  @media screen and (min-width: 340px) and (max-width: 479px) {
-    width: 340px;
-  }
-}
 
-.contacts {
-  background-color: #e5e5e5;
   &__list {
     font-style: normal;
     margin-bottom: 54px;
@@ -100,8 +100,8 @@
 }
 
 .contacts__locations {
-  padding: 10px 15px;
-  width: 161px;
+  padding: 10px 17px;
+  letter-spacing: 0.01em;
   margin-bottom: 10px;
 }
 

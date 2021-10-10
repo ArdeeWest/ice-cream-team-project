@@ -1,7 +1,17 @@
 .products-section {
-  padding-top: 120px;
-  padding-bottom: 100px;
+  padding-top: 121px;
+  padding-bottom: 98px;
   background-color: $main-bg-color;
+
+  @media screen and(min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
 
   &__label {
     font-family: Titan One;
@@ -19,6 +29,12 @@
       font-size: 26px;
       line-height: calc(30 / 26);
     }
+
+    @media screen and(min-width: 1200px) {
+      font-size: 30px;
+      line-height: calc(34 / 30);
+      letter-spacing: 0.04em;
+    }
   }
 
   &__title {
@@ -34,7 +50,12 @@
     @media screen and(min-width: 768px) {
       font-size: 48px;
       line-height: calc(55 / 48);
-      line-height: 55px;
+    }
+
+    @media screen and(min-width: 768px) {
+      font-size: 58px;
+      line-height: calc(66 / 58);
+      letter-spacing: 0.06em;
     }
   }
 }
@@ -44,6 +65,10 @@
     display: flex;
 
     margin-right: -20px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-right: -24px;
   }
 
   &__item {
@@ -56,13 +81,17 @@
       flex-basis: calc(100% / 3 - 20px);
     }
 
+    @media screen and(min-width: 1200px) {
+      flex-basis: calc(100% / 3 - 24px);
+    }
+
     &:not(:last-child) {
       @media screen and(max-width: 767px) {
         margin-bottom: 130px;
       }
 
       @media screen and(min-width: 768px) {
-        margin-right: 20px;
+        margin-right: 24px;
       }
     }
   }
@@ -73,6 +102,10 @@
 
   @media screen and(min-width: 768px) {
     margin-top: 150px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-top: 259px;
   }
 }
 
@@ -92,6 +125,10 @@
     padding: 152px 11px 40px 11px;
   }
 
+  @media screen and(min-width: 1200px) {
+    padding: 163px 44px 50px 44px;
+  }
+
   &::before {
     content: '';
     width: 249px;
@@ -108,6 +145,13 @@
     @media screen and(min-width: 768px) {
       width: 220px;
       height: 226px;
+    }
+
+    @media screen and(min-width: 1200px) {
+      width: 335px;
+      height: 335px;
+
+      transform: translateY(-63%);
     }
 
     // Alternative positioning variant
@@ -214,6 +258,11 @@
 
   color: $subtitle-color;
 
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+  }
+
   &::after {
     content: '';
     width: 26px;
@@ -222,6 +271,10 @@
 
     display: block;
     margin: 30px auto 0px auto;
+
+    @media screen and (min-width: 1200px) {
+      margin: 32px auto 0px auto;
+    }
   }
 }
 
@@ -245,6 +298,13 @@
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
+  }
+
+  @media screen and(min-width: 1200px) {
+    font-size: 16px;
+
+    margin-top: 32px;
+    -webkit-line-clamp: 4;
   }
 }
 
@@ -273,6 +333,10 @@
 
   @media screen and (min-width: 768px) {
     margin-top: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 62px;
   }
 }
 
@@ -311,14 +375,29 @@
 
   position: absolute;
   left: 0;
-  top: 180px;
-  height: 40%;
+  top: 194px;
+  height: 200px;
 
   opacity: 0;
   transform: scale(0.3);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and(min-width: 768px) {
+    line-height: 1.76;
+    overflow: auto;
+
+    top: 183px;
+    height: 210px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    font-size: 16px;
+
+    top: 207px;
+    top: 215px;
+  }
 
   &--ice-cream {
     background-color: #f88ca5;
