@@ -4,40 +4,27 @@
   line-height: $lh;
   color: $color;
 }
-@mixin trans($properties...) {
-  transition-property: $properties;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .contacts__container {
-  padding-top: 43px;
-  padding-bottom: 57px;
-  padding-left: 50px;
-  padding-right: 50px;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 60px;
-    padding-bottom: 80px;
-    padding-left: 34px;
-    padding-right: 34px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 60px;
-    padding-bottom: 80px;
-    padding-left: 73px;
-    padding-right: 73px;
+  @media screen and (max-width: 767px) {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
 .contacts {
+  padding-top: 43px;
+  padding-bottom: 57px;
   background-image: linear-gradient(
     to bottom,
     $main-bg-color 8%,
     $accent-bg-color 8%,
     $accent-bg-color 100%
   );
+
   @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 80px;
     background-image: linear-gradient(
       to bottom,
       $main-bg-color 16%,
@@ -47,6 +34,8 @@
   }
 
   @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 80px;
     background-image: linear-gradient(
       to bottom,
       $main-bg-color 25%,
@@ -55,7 +44,7 @@
     );
   }
 
-  &__list {
+  &__cards {
     margin-bottom: 54px;
 
     @media screen and (min-width: 768px) {
@@ -70,7 +59,7 @@
     }
   }
 
-  &__item {
+  &__card {
     padding: 43px 20px;
     background: #ffffff;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -151,18 +140,15 @@
 
   &__thumb {
     padding: 25px 0;
-    margin-bottom: 25px;
     border-top: 1px solid #e1e1e1;
     border-bottom: 1px solid #e1e1e1;
 
     @media screen and (min-width: 768px) {
       padding: 30px 0;
-      margin-bottom: 30px;
     }
 
     @media screen and (min-width: 1200px) {
       padding: 32px 0;
-      margin-bottom: 32px;
     }
   }
 
@@ -210,13 +196,26 @@
     @media screen and (min-width: 1200px) {
       font-size: 16px;
     }
+  }
+}
 
-    &:not(:last-child) {
-      margin-bottom: 10px;
+.contacts__list {
+  padding-top: 25px;
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+  }
 
-      @media screen and (min-width: 768px) {
-        margin-bottom: 14px;
-      }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+  }
+}
+
+.contacts__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 14px;
     }
   }
 }
