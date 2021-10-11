@@ -9,7 +9,11 @@
         align-items: center;
         padding-top: 5px;
     }
+    &__nav-list {
+        display: none;
+    }
     &__menu-button {
+      display: block;
       cursor: pointer;
       border: none;
       background-color: transparent;
@@ -58,12 +62,41 @@
         display: flex;
     }
     &__item {
+        display: flex;
+        align-items: center;
+        height: 24px;
+        border-radius: 20px;
+        padding: 0 15px;
         font-family: DM Sans;
+        font-style: normal;
         font-weight: normal;
         font-size: 8px;
         line-height: 1.25;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         &:first-child {
             margin-right: 8px;
+        }
+    }
+    &__item--red {
+      background-color: #D41443;
+      &:hover,
+      &:focus {
+        background-color: #C7133E;
+      }
+    }
+    &__item--white {
+      background-color: #ffffff;
+      &:hover,
+      &:focus {
+          background-color: #ECEBEB;
+      }
+    }
+    &__link {
+        &--red {
+            color: #FFFFFF;
+        }
+        &--white {
+           color: #D41443;
         }
     }
     &__count-list {
@@ -89,6 +122,9 @@
         border-radius: 50%;
         width: 346px;
         height: 344px;
+    }
+    &__box-text {
+        display: none;
     }
 }
 @media screen and (min-width: 768px) {
@@ -158,8 +194,6 @@
                 height: 16px;
                 border-radius: 50%;
                 z-index: -1;
-                // left: 734px;
-                // top: 94px;
                 background: #FFFFFF;
                 transform: matrix(-1, 0, 0, 1, 0, 0);
             }
@@ -191,6 +225,129 @@
           position: absolute;
           bottom: 0;
           right: 34px;
+        }
+        &__box-text {
+            display: block;
+            position: absolute;
+            left: 154px;
+            bottom: 34px;
+            width: 114px;
+            font-size: 8px;
+            line-height: 1.5;
+            color: #FFFFFF;
+        }
+        &__box-btn {
+            margin-top: 7px;
+            padding: 0;
+            border: 0;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-image: url(../images/hero/btn-arrow-right.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-color: #ffffff;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .logo {
+        margin-right: 0;
+    }
+    .header {
+        &__menu-button {
+            display: none;
+        }
+        &__nav-list {
+            display: flex;
+            align-items: center;
+        }
+        &__nav-item {
+            margin-right: 35px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        &__nav-link {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1.31;
+            color: #FFFFFF;
+            &--active {
+                color: #D41443;
+            }
+        }
+    }
+    .hero {
+        &__wrapper {
+            height: 665px;
+        }
+        &__box {
+            top: 171px;
+        }
+        &__title {
+          margin-bottom: 25px;
+          font-size: 38px;
+          line-height: 1.16;
+        }
+        &__subtitle {
+            font-size: 58px;
+            line-height: 0.905;
+        }
+        &__item {
+            height: 40px;
+            padding: 0 22px;
+            font-size: 14px;
+            line-height: 1.29;
+            &:first-child {
+              margin-right: 15px;
+            }
+        }
+        &__count-list {
+          right: 73px;
+          top: 160px;
+        }
+        &__count-item {
+          padding-top: 4px;
+          padding-right: 18px;
+          font-family: Titan One;
+          font-size: 46px;
+          line-height: 1.15;
+
+          &:first-child {
+            margin-bottom: 15px;
+          }
+
+          &::after {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+          }   
+
+        }
+        &__count-text {
+          font-size: 14px;
+          line-height: 1.29;
+          
+        }
+        &__box-circle {
+            width: 538px;
+            height: 538px;
+            top: 52px;
+            right: 170px;
+        }
+        &__box-text {
+            left: 222px;
+            bottom: 56px;
+            width: 200px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        &__box-btn {
+            margin-top: 20px;
+            width: 26px;
+            height: 26px;
         }
     }
 }

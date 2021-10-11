@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" id="home">
     <div class="container header__wrapper">
         <a href="#" class="logo">
             <picture>
@@ -8,6 +8,33 @@
                 <img class="logo__img" src="images/header/logo.png" alt="Logo">
             </picture>
         </a>
+        <ul class="header__nav-list">
+            <li class="header__nav-item">
+                <a href="#home" class="header__nav-link header__nav-link--active">
+                    Home
+                </a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#about" class="header__nav-link">
+                    About us
+                </a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#made" class="header__nav-link">
+                    How it’s made?
+                </a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#products" class="header__nav-link">
+                    Our products
+                </a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#contact" class="header__nav-link">
+                    Contact
+                </a>
+            </li>
+        </ul>
         <button class="header__menu-button menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg class="header__menu-burger" width="20" height="12" fill="currentColor">
                 <use href="images/symbol-defs.svg#icon-burger"></use>
@@ -29,11 +56,11 @@
                 <span class="hero__subtitle">passion</span>
             </h1>
             <ul class="hero__list">
-                <li class="hero__item">
-                    <a href="#products" class="hero__link btn--red">Products</a>
+                <li class="hero__item hero__item--red">
+                    <a href="#products" class="hero__link--red">Products</a>
                 </li>
-                <li class="hero__item">
-                    <a href="#made" class="hero__link btn--white">How it’s made?</a>
+                <li class="hero__item hero__item--white">
+                    <a href="#made" class="hero__link--white">How it’s made?</a>
                 </li>
             </ul>
         </div>
@@ -74,6 +101,12 @@
                 media="(min-width: 768px)">
             <img class="hero__img--girl" src="images/hero/tablet/girl-tablet.png" alt="Girl">
         </picture>
-
+        <div class="hero__box-text">
+            <p class="hero__box-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et
+            </p>
+            <button class="hero__box-btn"></button>
+        </div>
     </div>
 </section>
