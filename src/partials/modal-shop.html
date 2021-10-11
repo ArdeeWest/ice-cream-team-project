@@ -1,0 +1,115 @@
+<div class="backdrop is-hidden" data-modal-shop>
+  <div class="modal">
+    <button data-modal-shop-close class="modal__btn--close" type="button">
+      <svg class="modal__icon--close" width="18" height="18">
+        <use href="images/symbol-defs.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+    <!-- Форма отправки в модальном окне -->
+    <form action="#" class="order-form" name="order-data" method="GET">
+      <div class="order-form__field">
+        <label class="order-form__label">Choose the product</label>
+        <select class="order-form--select">
+          <option selected value="Ice Cream">Ice Cream</option>
+          <option value="Ice Coffee">Ice Coffee</option>
+          <option value="Milkshake">Milkshake</option>
+        </select>
+        <div class="wrap-icon">
+          <svg class="order-form__icon" width="42" height="42">
+            <use href="images/symbol-defs.svg#icecream-6"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="order-form__field">
+        <label class="order-form__label" for="product-categories"
+          >Choose the taste of the product</label
+        >
+        <select class="order-form--select" id="product-categories" name="product-categories">
+          <option selected value="Dark Chocolate">Dark Chocolate</option>
+          <option value="Vanilla&amp;Strawberry">Vanilla and Strawberry</option>
+          <option value="Banana&amp;Melon">Banana and Melon</option>
+          <option value="Nuts&amp;Cookies">Nuts and Cookies</option>
+          <option value="Caramel&amp;Peach">Caramel and Peach</option>
+          <option value="Fruits Mix">Fruit Mix</option>
+          <option value="Bubble Gum">Bubble Gum</option>
+        </select>
+        <div class="wrap-icon">
+          <svg class="order-form__icon" width="42" height="42">
+            <use href="images/symbol-defs.svg#icecream-2"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-user-name">Name</label>
+        <input
+          class="order-form__input"
+          type="text"
+          name="name"
+          id="order-user-name"
+          required
+          autocomplete="off"
+          placeholder="James Bond"
+        />
+        <div class="wrap-icon">
+          <svg class="order-form__icon" width="42" height="42">
+            <use href="images/symbol-defs.svg#icecream-4"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-user-phone">Phone</label>
+        <input
+          class="order-form__input"
+          type="tel"
+          name="telephone"
+          id="order-user-phone"
+          required
+          autocomplete="off"
+          placeholder="+61(0)000-000-000"
+        />
+        <div class="wrap-icon">
+          <svg class="order-form__icon" width="42" height="42">
+            <use href="images/symbol-defs.svg#icecream-1"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-user-address">Address</label>
+        <input
+          class="order-form__input"
+          type="text"
+          name="address"
+          id="order-user-address"
+          required
+          autocomplete="off"
+          placeholder="9641 Sunset Blvd, Beverly Hills"
+        />
+        <div class="wrap-icon">
+          <svg class="order-form__icon" width="42" height="42">
+            <use href="images/symbol-defs.svg#icecream-5"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="order-form__field">
+        <p class="order-form__label">How would you like to pay?</p>
+        <label class="order-form__label-radio">
+          <input
+            class="order-form__radio"
+            type="radio"
+            name="payment-method"
+            value="credit-card"
+            checked
+          />
+          <div class="order-form__radio-fake"></div>
+          <span class="order-form__span-label">Credit card</span>
+        </label>
+        <label class="order-form__label-radio">
+          <input class="order-form__radio" type="radio" name="payment-method" value="cash" />
+          <div class="order-form__radio-fake"></div>
+          <span class="order-form__span-label">Cash</span>
+        </label>
+      </div>
+      <button class="order-form__btn btn--red" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
