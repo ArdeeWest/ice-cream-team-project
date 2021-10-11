@@ -14,25 +14,7 @@
   @media screen and (min-width: 1200px) {
     display: none;
   }
-<<<<<<< Updated upstream
   @media screen and (min-width: 768px) {
-=======
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    transform: translateX(100%);
-    top: 0;
-    right: 0;
-    width: 254px;
-    transition: transform 250ms ease-in-out;
-
-    &.is-open {
-      transform: translateX(0);
-    }
-  }
-  @media screen and (max-width: 767px) {
-    top: 0;
-    left: 0;
->>>>>>> Stashed changes
     display: none;
     &.is-open {
       display: block;
