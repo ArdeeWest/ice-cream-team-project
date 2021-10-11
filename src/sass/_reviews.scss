@@ -7,7 +7,7 @@
   padding-top: 40px;
   padding-bottom: 43px;
   background-color: #ffffff;
-  // background-color: #c7133e;
+  // background-color: #6aa07f;
   margin-left: auto;
   margin-right: auto;
   min-width: 320px;
@@ -149,3 +149,57 @@
   width: 12px;
   height: 12px;
 }
+// слайдер
+// стрелки в нутри слайдера
+.slider .slick-arrow {
+  // display: none;
+}
+// Точки
+.slick-dots li {
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+.slick-dots li button:before {
+  font-size: 0px;
+}
+.slider .slick-dots {
+}
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 18px;
+}
+.slider .slick-dots button {
+  // margin-left: 18px;
+  background: #d9d9d9;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.slider .slick-dots li.slick-active button {
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url('../images/reviews/home.svg');
+  border-radius: 0;
+}
+.slider__item {
+  display: flex;
+  text-align: center;
+}
+// .slider .slider__section {
+// }
+// .element.style {
+//   display: none;
+// }
+.slider__section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+// .slider__section .element.style {
+//   display: flex;
+// }
+// .slider .slider-track {
+//   display: flex;
+// }
