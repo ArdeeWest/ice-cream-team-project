@@ -15,9 +15,6 @@
   padding-bottom: 57px;
   padding-left: 50px;
   padding-right: 50px;
-  //   @media screen and (min-width: 340px) and (min-width: 480px) {
-  //     width: 340px;
-  //   }
 }
 
 .contacts {
@@ -100,7 +97,7 @@
 }
 
 .contacts__locations {
-  padding: 10px 17px;
+  padding: 13px 17px;
   letter-spacing: 0.01em;
   margin-bottom: 10px;
 }
@@ -109,4 +106,5 @@
   display: block;
   margin: 0 auto;
   min-width: 161px;
+  padding: 13px 17px;
 }
