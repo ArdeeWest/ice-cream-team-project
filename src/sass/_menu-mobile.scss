@@ -108,7 +108,7 @@
 .header__menu-button.is-open .icon-close {
   display: block;
 }
-.header__menu-button.is-open .header__menu-burger {
+.header__menu-button[aria-expanded='true'] {
   display: none;
 }
 .header__menu-button:hover .icon-close,
