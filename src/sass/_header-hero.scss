@@ -1,5 +1,5 @@
 .header {
-    background-color: $hero-bg-color;
+    background-color: rgba(255, 184, 202, .8);
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -338,7 +338,7 @@
             right: 170px;
         }
         &__box-text {
-            left: 222px;
+            left: 256px;
             bottom: 56px;
             width: 200px;
             font-size: 14px;
@@ -348,6 +348,19 @@
             margin-top: 20px;
             width: 26px;
             height: 26px;
+        }
+        &__img--icecream {
+          right: 341px;
+        }
+
+        &__img--jug {
+          bottom: 45px;
+        }
+
+        &__img--girl {
+          bottom: 0;
+          right: 73px;
+          z-index: 3;
         }
     }
 }
