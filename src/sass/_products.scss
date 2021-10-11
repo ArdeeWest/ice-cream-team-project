@@ -14,49 +14,63 @@
   }
 
   &__label {
-    font-family: Titan One;
-    font-size: 18px;
-    line-height: calc(21 / 18);
-
-    text-align: center;
-    text-transform: uppercase;
-
-    color: $label-color;
-
     margin-bottom: 15px;
-
-    @media screen and(min-width: 768px) {
-      font-size: 26px;
-      line-height: calc(30 / 26);
-    }
-
-    @media screen and(min-width: 1200px) {
-      font-size: 30px;
-      line-height: calc(34 / 30);
-      letter-spacing: 0.04em;
-    }
   }
 
   &__title {
-    font-family: Titan One;
-    font-size: 34px;
-    line-height: calc(39 / 34);
-    text-align: center;
+    margin-bottom: 145px;
+
+    @media screen and(min-width: 768px) {
+      margin-bottom: 150px;
+    }
+
+    @media screen and(min-width: 1200px) {
+      margin-bottom: 259px;
+    }
+  }
+}
+
+.label {
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $label-color;
+
+  @media screen and(min-width: 768px) {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+  }
+
+  @media screen and(min-width: 1200px) {
+    font-size: 30px;
+    line-height: calc(34 / 30);
     letter-spacing: 0.04em;
-    text-transform: uppercase;
+  }
+}
 
-    color: $title-color;
+.title {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-    @media screen and(min-width: 768px) {
-      font-size: 48px;
-      line-height: calc(55 / 48);
-    }
+  color: $title-color;
 
-    @media screen and(min-width: 768px) {
-      font-size: 58px;
-      line-height: calc(66 / 58);
-      letter-spacing: 0.06em;
-    }
+  @media screen and(min-width: 768px) {
+    font-size: 48px;
+    line-height: calc(55 / 48);
+  }
+
+  @media screen and(min-width: 1200px) {
+    font-size: 58px;
+    line-height: calc(66 / 58);
+    letter-spacing: 0.06em;
   }
 }
 
@@ -96,18 +110,6 @@
         margin-right: 27px;
       }
     }
-  }
-}
-
-.cards-grid__products-section {
-  margin-top: 145px;
-
-  @media screen and(min-width: 768px) {
-    margin-top: 150px;
-  }
-
-  @media screen and(min-width: 1200px) {
-    margin-top: 259px;
   }
 }
 
