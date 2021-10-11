@@ -26,9 +26,10 @@
   &:hover,
   &:focus {
     cursor: pointer;
+    animation-delay: 0ms;
     animation: flip;
     animation-duration: 1000ms;
-    animation: animate125 3000ms infinite 1000ms;
+    animation: animate125 3000ms ease-in-out infinite 1000ms;
   }
 }
 @keyframes animate125 {
