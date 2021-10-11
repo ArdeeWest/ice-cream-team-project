@@ -1,8 +1,11 @@
 .header {
-    background-color: rgba(255, 184, 202, .8);
+    // background-color: rgba(255, 184, 202, .8);
     position: fixed;
     width: 100%;
     z-index: 100;
+    background-image: linear-gradient(to top, #ffb8cae6 1%, #f88ca5);
+    
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -276,6 +279,10 @@
             color: #FFFFFF;
             &--active {
                 color: #D41443;
+            }
+            &:hover,
+            &:focus {
+              color: #D41443;
             }
         }
     }
