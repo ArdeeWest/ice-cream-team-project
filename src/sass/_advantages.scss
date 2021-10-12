@@ -43,6 +43,10 @@
   }
 }
 .advanteges__icon {
+  animation-name: circling-icon;
+  animation-duration: 3500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   margin-bottom: 16px;
   @media screen and(min-width:768px) {
     margin-bottom: 36px;
@@ -51,6 +55,11 @@
     margin-bottom: 40px;
   }
 }
+@keyframes circling-icon {
+    0%{
+     transform: rotateY(360deg); 
+    }
+  }
 
 .advantages__title {
   font-family: Titan One;
@@ -62,6 +71,13 @@
   text-transform: uppercase;
   color: $title-color;
   margin-bottom: 20px;
+
+  animation-name: circling-title;
+  animation-duration: 3000ms;
+  animation-timing-function:linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 1.46;
@@ -74,7 +90,12 @@
     line-height: 1.14;
     margin-top: 40px;
     margin-bottom: 15px;}
-    
+}
+
+@keyframes circling-title{
+  0%{
+     transform:scale(1.1); 
+  }
 }
 
 .advantages__text {
