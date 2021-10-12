@@ -59,7 +59,7 @@
   border: unset;
   box-sizing: border-box;
   cursor: pointer;
-
+  outline: none;
   &:hover > .modal__icon,
   &:focus > .modal__icon {
     fill: $title-color;
