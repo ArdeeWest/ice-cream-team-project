@@ -24,9 +24,13 @@
   width: 100%;
 }
 .riviews__img {
+  height: 85px;
+  width: 85px;
   margin-bottom: 29px;
 }
 .riviews__bloc {
+  margin-left: auto;
+  margin-right: auto;
   width: 280px;
   padding: 43px 50px 20px 50px;
   background: #fafafa;
@@ -113,10 +117,18 @@
     transform: translate(-7px, -18px);
   }
 }
-.riviews__list {
+.slider .riviews__list {
   display: flex;
   margin-bottom: 18px;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.slider .riviews__p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .riviews__li {
   &:not(:last-child) {
@@ -193,11 +205,17 @@
 //   display: none;
 // }
 .slider__section {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.slider__section img {
+  margin-left: auto;
+  margin-right: auto;
 }
 // .slider__section .element.style {
 //   display: flex;
