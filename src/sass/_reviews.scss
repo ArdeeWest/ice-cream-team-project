@@ -16,9 +16,13 @@
   width: 100%;
 }
 .riviews__img {
+  height: 85px;
+  width: 85px;
   margin-bottom: 29px;
 }
 .riviews__bloc {
+  margin-left: auto;
+  margin-right: auto;
   width: 280px;
   padding: 43px 50px 20px 50px;
   background: #fafafa;
@@ -105,10 +109,18 @@
     transform: translate(-7px, -18px);
   }
 }
-.riviews__list {
+.slider .riviews__list {
   display: flex;
   margin-bottom: 18px;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.slider .riviews__p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .riviews__li {
   &:not(:last-child) {
@@ -142,4 +154,49 @@
 .riviews__svg {
   width: 12px;
   height: 12px;
+}
+// слайдер
+// стрелки в нутри слайдера
+// Точки
+.slick-dots li {
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+.slick-dots li button:before {
+  font-size: 0px;
+}
+.slider .slick-dots {
+}
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 18px;
+}
+.slider .slick-dots button {
+  background: #d9d9d9;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.slider .slick-dots li.slick-active button {
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url('../images/reviews/home.svg');
+  border-radius: 0;
+}
+.slider__item {
+  display: flex;
+  text-align: center;
+}
+.slider__section {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.slider__section img {
+  margin-left: auto;
+  margin-right: auto;
 }
