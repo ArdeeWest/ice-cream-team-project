@@ -124,11 +124,12 @@
   justify-content: center;
 
   position: relative;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 8000ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and(min-width: 768px) {
     padding: 152px 11px 40px 11px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   @media screen and(min-width: 1200px) {
@@ -167,8 +168,11 @@
   }
 
   &:hover {
-    transform: scale(1.02);
     box-shadow: 0px 5px 15px 0px rgba(85, 85, 85, 0.5);
+
+    @media screen and (min-width: 768px) {
+      transform: scale(1.02);
+    }
   }
 }
 
@@ -425,4 +429,9 @@
 .overlay-shown {
   opacity: 1;
   transform: scale(1);
+}
+
+.btn-icon-rotetion {
+  transform: rotate(-90deg);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
