@@ -26,10 +26,10 @@
   &:hover,
   &:focus {
     cursor: pointer;
-    animation-delay: 0ms;
-    animation: flip;
-    animation-duration: 1000ms;
-    animation: animate125 3000ms ease-in-out infinite 1000ms;
+    // animation-delay: 0ms;
+    // animation: flip;
+    // animation-duration: 1000ms;
+    animation: animate125 3000ms ease-in-out infinite 0ms;
   }
 }
 @keyframes animate125 {
@@ -38,7 +38,7 @@
   }
 
   50% {
-    transform: scale(1.25);
+    transform: scale(1.5);
   }
 
   100% {
