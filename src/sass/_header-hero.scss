@@ -24,13 +24,16 @@
     background-color: transparent;
   }
 }
-
-.logo__img {
-  max-width: 200px;
-  display: inline-block;
+.logo {
+  outline: none;
+  &__img {
+    max-width: 200px;
+    display: inline-block;
+  }
 }
 
 .header__modal-button {
+  outline: none;
   display: none;
 }
 
@@ -84,6 +87,7 @@
   &__link {
     display: block;
     cursor: pointer;
+    outline: none;
     border-radius: 20px;
     padding: 7px 14px;
     font-family: DM Sans;
@@ -277,6 +281,7 @@
     }
 
     &__box-btn {
+      outline: none;
       cursor: pointer;
       margin-top: 7px;
       padding: 0;
