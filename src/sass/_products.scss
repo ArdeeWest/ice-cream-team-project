@@ -436,3 +436,11 @@
   transform: rotate(-90deg);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.card-is-active {
+  box-shadow: 0px 5px 15px 0px rgba(85, 85, 85, 0.5);
+
+  @media screen and (min-width: 768px) {
+    transform: scale(1.02);
+  }
+}
