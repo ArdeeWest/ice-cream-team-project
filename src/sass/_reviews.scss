@@ -40,6 +40,7 @@
     padding-bottom: 39px;
   }
 }
+
 .riviews__h3 {
   position: relative;
   z-index: 4;
@@ -122,6 +123,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .riviews__li {
   &:not(:last-child) {
     margin-right: 10px;
@@ -199,4 +201,7 @@
 .slider__section img {
   margin-left: auto;
   margin-right: auto;
+}
+.riviews__pp {
+  margin-bottom: 48px;
 }
