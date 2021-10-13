@@ -25,7 +25,6 @@
   }
 }
 .logo {
-  outline: none;
   cursor: pointer;
   &__img {
     max-width: 200px;
@@ -34,7 +33,7 @@
 }
 
 .header__modal-button {
-  outline: none;
+  
   display: none;
 }
 
@@ -88,7 +87,6 @@
   &__link {
     display: block;
     cursor: pointer;
-    outline: none;
     border-radius: 20px;
     padding: 7px 14px;
     font-family: DM Sans;
@@ -97,10 +95,12 @@
     font-size: 8px;
     line-height: 1.25;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 
     &--red {
       background-color: #D41443;
       color: #FFFFFF;
+      
 
       &:hover,
       &:focus {
@@ -111,6 +111,7 @@
     &--white {
       background-color: #FFFFFF;
       color: #D41443;
+      
 
       &:hover,
       &:focus {
@@ -282,7 +283,6 @@
     }
 
     &__box-btn {
-      outline: none;
       cursor: pointer;
       margin-top: 7px;
       padding: 0;
@@ -313,7 +313,7 @@
       display: flex;
       align-items: center;
     }
-
+    
     &__nav-item {
       margin-right: 35px;
 
@@ -323,10 +323,14 @@
     }
 
     &__nav-link {
+      display: block;
+      padding-top: 15px;
+      padding-bottom: 15px;
       font-weight: bold;
       font-size: 16px;
       line-height: 1.31;
       color: #FFFFFF;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
       &--active {
         color: #D41443;
@@ -334,7 +338,6 @@
 
       &:hover,
       &:focus {
-        outline: none;
         color: #D41443;
       }
     }
@@ -439,11 +442,11 @@
   }
 }
 
+// ANIMATE GIRL----------------------------------
 .hero__img--girl {
   transform: scale(1);
   animation: pulse 3000ms ease-in-out 3;
 }
-
 @keyframes pulse {
   from {
     transform: scale(1);
@@ -455,5 +458,28 @@
 
   to {
     transform: scale(1);
+  }
+}
+// ANIMATE NUMBERS----------------------------------
+.hero__count-item {
+  animation: shake 3000ms cubic-bezier(.36, .07, .19, .97) infinite 0ms;
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
   }
 }
