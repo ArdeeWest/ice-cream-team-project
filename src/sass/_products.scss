@@ -363,17 +363,14 @@
 .product-card__button:focus {
   &.product-card__button--ice-cream {
     box-shadow: 0px 0px 2px 3px #f88ca5;
-    outline: #f88ca5;
   }
 
   &.product-card__button--ice-coffe {
     box-shadow: 0px 0px 2px 3px #e8c086;
-    outline: #e8c086;
   }
 
   &.product-card__button--milkshake {
     box-shadow: 0px 0px 2px 3px #acd17b;
-    outline: #acd17b;
   }
 }
 
